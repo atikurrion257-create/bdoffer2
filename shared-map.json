@@ -1,0 +1,50 @@
+{
+  "_comment": "Single source of truth mapping. Each shared reference file is copied into the listed skills' references/ folder at build time. Edit shared/*.md only, then rebuild.",
+  "shared": {
+    "verification-taxonomy.md": [
+      "elementor-native-architecture",
+      "design-to-elementor-plan",
+      "elementor-structure-audit",
+      "elementor-qa-gate",
+      "wordpress-site-architecture",
+      "acf-dynamic-content-plan",
+      "site-quality-review"
+    ],
+    "dialect-policy.md": [
+      "elementor-native-architecture",
+      "design-to-elementor-plan",
+      "wordpress-site-architecture",
+      "acf-dynamic-content-plan",
+      "elementor-structure-audit"
+    ],
+    "anti-pattern-catalogue.md": [
+      "elementor-native-architecture",
+      "elementor-structure-audit",
+      "elementor-qa-gate"
+    ],
+    "widget-map-v3.md": [
+      "elementor-native-architecture",
+      "design-to-elementor-plan",
+      "elementor-structure-audit"
+    ],
+    "widget-map-v4.md": [
+      "elementor-native-architecture",
+      "design-to-elementor-plan",
+      "elementor-structure-audit"
+    ],
+    "json-rules.md": [
+      "elementor-structure-audit"
+    ],
+    "structural-digest-protocol.md": [
+      "elementor-structure-audit"
+    ],
+    "house-standard.md": [
+      "elementor-native-architecture",
+      "design-to-elementor-plan",
+      "elementor-qa-gate",
+      "wordpress-site-architecture",
+      "acf-dynamic-content-plan",
+      "site-quality-review"
+    ]
+  }
+}

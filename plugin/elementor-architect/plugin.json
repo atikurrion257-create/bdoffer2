@@ -1,0 +1,27 @@
+{
+  "name": "elementor-architect",
+  "version": "1.0.0",
+  "description": "Senior Elementor + WordPress architect. Plans native, editable, maintainable Elementor architecture and audits existing work (including AI-generated builds) for non-native structure, hardcoded content, responsiveness gaps and maintainability problems. Skills only: no site connection, no credentials, no writes.",
+  "skills": "./skills/",
+  "author": {
+    "name": "Private build"
+  },
+  "license": "UNLICENSED",
+  "extensions": {
+    "com.openai": {
+      "displayName": "Elementor Architect",
+      "shortDescription": "Plan and audit native Elementor architecture",
+      "category": "Developer tools",
+      "examplePrompts": [
+        "Audit this Elementor JSON and tell me what an AI agent got wrong.",
+        "Turn this screenshot into a native Elementor implementation plan.",
+        "Convert this HTML/CSS into native Elementor architecture with a mapping table.",
+        "Is this 'native Elementor' or a giant HTML widget with extra steps?",
+        "Plan the Theme Builder structure and display conditions for a 40-page service site.",
+        "Design an ACF + dynamic content architecture so the client can edit everything safely.",
+        "Review this page for performance, SEO and accessibility — prioritised, and tell me what NOT to touch.",
+        "QA this build across desktop/tablet/mobile and tell me if it is ready to ship."
+      ]
+    }
+  }
+}

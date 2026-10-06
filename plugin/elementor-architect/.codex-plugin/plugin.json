@@ -1,0 +1,6 @@
+{
+  "name": "elementor-architect",
+  "version": "1.0.0",
+  "description": "Senior Elementor + WordPress architect: native architecture planning, design-to-Elementor blueprints, structure audits, QA gates, WordPress/Theme Builder/ACF planning and quality review.",
+  "skills": "./skills/"
+}
