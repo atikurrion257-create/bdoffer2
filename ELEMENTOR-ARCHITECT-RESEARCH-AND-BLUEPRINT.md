@@ -14,6 +14,38 @@
 
 ---
 
+## Read this first (plain English)
+
+**What a "ChatGPT plugin" actually is, in this context.** It's a pack you install in ChatGPT. The pack contains **Skills** — saved instruction files (plus reference documents) that teach ChatGPT how to do one specific job the same way every time. A plugin can *also* contain a live connection to an outside service (that connection is called an MCP server, e.g. connecting to your WordPress site). For this project we don't need a connection at first: instructions + reference files are enough.
+
+**What I found, in five sentences:**
+
+1. **Elementor already solved the "connect AI to my site" problem.** In September 2026 Elementor released its own official connection that lets Codex/ChatGPT-like tools build real, editable Elementor pages directly on a WordPress site, always saved as a draft. We should use that, not build our own.
+2. **"Native Elementor" now means two different things.** Old style (widgets/containers) and new style (Atomic/V4). New sites use the new style by default. So the plugin must always ask/detect which style the site uses before giving advice.
+3. **Making AI spit out Elementor JSON to import is not reliable.** Elementor says there's no public API for the new format and discourages outside tools from writing it. But **checking** JSON, screenshots, HTML and site plans works extremely well — and that's 80% of what you actually do.
+4. **So the smart product is a reviewer and planner, not a generator.** It gives you a build blueprint a junior dev can follow, and it hunts down the exact problems you're tired of seeing in AI-built sites (giant HTML widgets, fake nesting, hardcoded content, duplicated styling, no theme-builder logic).
+5. **You don't need 20 features.** Seven well-scoped skills cover everything, and fewer skills = fewer mix-ups.
+
+**The seven skills, plainly:**
+
+| Skill | What it does for you |
+|---|---|
+| 1. Native architecture | Decides the rules: old vs new style, which element to use, when custom code is truly justified |
+| 2. Design → plan | Turns a screenshot/Figma/URL/HTML into a step-by-step native Elementor build plan |
+| 3. Structure audit | Reviews JSON/templates/exports and finds fake, fragile or unmaintainable structures |
+| 4. QA gate | Final check before handoff: responsive, editability, content stress, "is it ready to ship?" |
+| 5. WordPress architecture | Content types, Theme Builder templates and conditions, redesign/migration planning |
+| 6. ACF + dynamic content | Makes content editable safely, and flags what Elementor *can't* do natively |
+| 7. Quality review | Performance, SEO and accessibility in one prioritised list — including what NOT to touch |
+
+**What this looks like day to day.** You open ChatGPT, attach a JSON or a screenshot, and say: *"Audit this AI-built Elementor page"* or *"Turn this screenshot into a native Elementor build plan"* or *"Design the Theme Builder conditions for this 40-page site."* You get a ranked report or a build spec — not a lecture and not a mystery file you're afraid to import.
+
+**What it deliberately will not do:** store passwords, touch your live sites, generate "just import this" JSON it can't guarantee, or pretend a design is pixel-perfect when it's a responsive system.
+
+The rest of this document is the detailed evidence and the exact build instructions.
+
+---
+
 # 0. Research Evidence Matrix
 
 Columns: Claim → Source → Source Type → Date/Last Updated → Confidence → Why It Matters → Implementation Impact.
